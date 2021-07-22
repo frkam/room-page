@@ -1,0 +1,52 @@
+.features {
+  margin-top: 10.3rem;
+
+  &__heading {
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 5.6rem;
+    text-align: start;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    padding-top: 2.4rem;
+    color: #46856e;
+  }
+
+  &__story {
+    margin-top: 7.1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    &-img {
+      justify-self: center;
+      align-self: center;
+    }
+
+    &-heading {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      font-weight: 400;
+      color: #1a1a1a;
+      padding-top: 2.6rem;
+    }
+
+    &-text {
+      font-weight: 400;
+      color: #aaaaaa;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      padding-top: 1.6rem;
+      padding-right: 4.8rem;
+    }
+  }
+}

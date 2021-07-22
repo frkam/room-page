@@ -1,0 +1,108 @@
+.promises {
+  padding-top: 24rem;
+
+  &__text-box {
+    max-width: 88.2rem;
+    margin: 0 auto;
+  }
+
+  &__text {
+    color: #aaaaaa;
+  }
+
+  &__heading {
+    color: #000000;
+    padding-top: 2.5rem;
+  }
+
+  &__text,
+  &__heading {
+    font-weight: 400;
+    font-size: 4.6rem;
+    line-height: 5.2rem;
+  }
+
+  &__cards {
+    padding-top: 13.5rem;
+  }
+
+  &__card {
+    display: flex;
+
+    @media only screen and (max-width: $bp-small) {
+      padding-top: 2rem;
+    }
+  }
+
+  &__card-heading,
+  &__card-text {
+    font-weight: 400;
+  }
+
+  &__card-img--textsecond,
+  &__card-img--textfirst {
+    width: 100%;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__card-img--textsecond {
+    padding-left: 9rem;
+  }
+
+  &__card-img--textfirst {
+    padding-right: 9rem;
+  }
+
+  &__card-heading {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    padding-bottom: 2rem;
+  }
+
+  &__card-text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #aaaaaa;
+  }
+
+  &__card-text-box--textsecond {
+    padding-left: 9rem;
+    padding-right: 20rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  &__card-text-box--textfirst {
+    padding-right: 9rem;
+    padding-left: 19rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  &__card-img--textsecond,
+  &__card-img--textfirst {
+    padding-top: 6.4rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0;
+    }
+  }
+
+  &__card-text-box--textfirst,
+  &__card-text-box--textsecond {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

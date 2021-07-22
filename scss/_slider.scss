@@ -1,0 +1,77 @@
+.slider {
+  margin-top: 20rem;
+  &__img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+.flickity {
+  &-enabled:focus {
+    outline: none;
+  }
+
+  &-button,
+  &-button:hover {
+    background-color: transparent;
+  }
+
+  &-prev-next-button {
+    width: 6.3rem;
+    height: 12.2rem;
+  }
+
+  &-button-icon {
+    fill: white;
+  }
+
+  &-button:disabled {
+    display: none;
+  }
+
+  &-prev-next-button.previous {
+    left: 13vw;
+  }
+
+  &-prev-next-button.next {
+    right: 13vw;
+  }
+
+  &-page-dots .dot.is-selected {
+    background: #46856e;
+  }
+
+  &-page-dots {
+    bottom: -3.3rem;
+  }
+}
+
+.carousel {
+  height: 70rem;
+  &-cell {
+    width: 80%;
+    counter-increment: carousel-cell;
+    line-height: 0;
+    height: 70rem;
+    @media only screen and (max-width: $bp-large) {
+      height: 35rem;
+    }
+  }
+  &-cell:before {
+    color: white;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    height: 35rem;
+  }
+}
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    min-width: 100%;
+  }
+}

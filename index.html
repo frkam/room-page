@@ -4,7 +4,529 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/flickity.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="javascript/flickity.pkgd.js"></script>
+    <script defer src="javascript/flickityConfig.js"></script>
+    <title>Room</title>
   </head>
-  <body></body>
+    <header class="header">
+      <div class="header__contacts">
+        <h5 class="heading-5 u-margin-right-md">Contact Sales</h5>
+        <h5 class="heading-5 u-margin-right-md">TEL 646-791-3726</h5>
+        <h5 class="heading-5 u-margin-right-md">
+          US
+          <svg
+            class="header__icon"
+            width="14"
+            height="7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity=".9" clip-path="url(#clip0)">
+              <path
+                opacity=".9"
+                d="M.5.5l6.333 5.715M13.5.5L7.167 6.215"
+                stroke="#AAA"
+                stroke-linecap="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path fill="#fff" d="M0 0h14v7H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </h5>
+      </div>
+      <nav class="navigation">
+        <div class="navigation__logo">
+          <img src="img/R-logo.png" alt="logo__R" class="navigation__logo-R" />
+
+          <img
+            src="img/O-logo.png"
+            alt="logo__O"
+            class="navigation__logo-O--right-top"
+          />
+
+          <img
+            src="img/O-logo.png"
+            alt="logo__O"
+            class="navigation__logo-O--left-bottom"
+          />
+
+          <img src="img/M-logo.png" alt="logo__M" class="navigation__logo-M" />
+        </div>
+        <div class="navigation__link-box">
+          <a href="#" class="navigation__link-box--link">Products</a>
+          <a href="#" class="navigation__link-box--link">Explore</a>
+          <a href="#" class="navigation__link-box--link">Shop</a>
+        </div>
+        <div class="navigation__location">
+          <svg
+            width="20"
+            height="24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M.99 9.12A9.1 9.1 0 0110.09 0a9.1 9.1 0 019.08 9.12c0 3.67-2.61 6.97-4.8 9.73L10.5 23.8c-.24.25-.6.3-.84 0l-1.24-1.61c-.87-1.14-1.74-2.29-2.64-3.33C3.6 16.08 1 12.78 1 9.12zm17.12 0a8.03 8.03 0 10-16.06 0c0 3.3 2.48 6.44 4.56 9.06.73.98 1.5 1.96 2.28 2.93l1.2 1.5 3.45-4.42c2.08-2.63 4.57-5.77 4.57-9.07z"
+              fill="#000"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.18 8.89a4.4 4.4 0 014.33-4.45c2.39 0 4.33 2 4.33 4.45a4.4 4.4 0 01-4.33 4.44c-2.39 0-4.33-1.99-4.33-4.44zm7.65 0c0-1.89-1.48-3.4-3.32-3.4a3.36 3.36 0 00-3.31 3.4c0 1.88 1.48 3.4 3.31 3.4a3.36 3.36 0 003.32-3.4z"
+              fill="#000"
+            />
+          </svg>
+          <a href="#" class="navigation__link-box--link u-margin-right-md"
+            >Showrooms</a
+          >
+          <svg
+            class="navigation__location-cart"
+            width="25"
+            height="25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M.01.73c0 .4.27.73.6.73h2.1c.77 0 1.41.55 1.65 1.44l3.18 11.58-1.8 5.49c-.17.48.13.99.55 1h13.25c.33 0 .6-.33.6-.73 0-.4-.27-.73-.6-.73H7.18l1.4-4.28h10.96c.26 0 .49-.21.57-.5l3.76-10.26c.18-.5-.12-1.01-.55-1.03H5.77l-.27-1C5.1.97 4 0 2.7 0H.61c-.33 0-.6.33-.6.73zm8.6 13.04L6.18 4.9H22.4l-3.25 8.87H8.61zM7.53 21.77c.75 0 1.36.73 1.36 1.62 0 .89-.6 1.61-1.36 1.61-.76 0-1.37-.72-1.37-1.61 0-.9.61-1.62 1.37-1.62zM18.46 21.77c.75 0 1.36.73 1.36 1.62 0 .89-.6 1.61-1.36 1.61-.76 0-1.37-.72-1.37-1.61 0-.9.61-1.62 1.37-1.62z"
+              fill="#1A1A1A"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <section class="introduction row">
+      <img src="img/room.jpg" alt="room" class="introduction__img" />
+      <div class="introduction__text-box">
+        <h1 class="introduction__heading">
+          Design that inspires a better way to work.
+        </h1>
+        <p class="introduction__text">
+          We've developed a series of purpose-built rooms that offer companies
+          looking for change an affordable, sustainable, and flexible
+          alternative to fixed construction and traditional office design.
+        </p>
+      </div>
+    </section>
+
+    <section class="rooms row">
+      <div class="rooms__cards">
+        <div class="rooms__card rooms__card--1">
+          <img src="img/phone-booth.jpg" alt="phone-booth" class="rooms__img" />
+          <h4 class="heading-4 u-margin-top-sm">Phone Booth</h4>
+        </div>
+        <div class="rooms__card rooms__card--2">
+          <img src="img/focus-room.png" alt="focus-room" class="rooms__img" />
+          <h4 class="heading-4 u-margin-top-sm">Focus Room</h4>
+        </div>
+        <div class="rooms__card rooms__card--3">
+          <img
+            src="img/meeting-room.png"
+            alt="meeting-room"
+            class="rooms__img"
+          />
+          <h4 class="heading-4 u-margin-top-sm">Meeting Room</h4>
+        </div>
+        <div class="rooms__card rooms__card--4">
+          <img
+            src="img/open-meeting-room.png"
+            alt="open-meeting-room"
+            class="rooms__img"
+          />
+          <h4 class="heading-4 u-margin-top-sm">Open Meeting Room</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands row">
+      <div class="brands__text-box">
+        <h3 class="brands__heading-3">
+          The world's leading brands choose ROOM.
+        </h3>
+        <h4 class="brands__heading-4">Over 3,000 and counting.</h4>
+      </div>
+      <div class="brands__logos">
+        <img src="img/nike.png" alt="nike-logo" class="brands__logo" /><img
+          src="img/nasa.png"
+          alt="nasa-logo"
+          class="brands__logo"
+        /><img
+          src="img/google.png"
+          alt="google-logo"
+          class="brands__logo"
+        /><img src="img/Uber.png" alt="uber-logo" class="brands__logo" /><img
+          src="img/Walmart.png"
+          alt="walmart-logo"
+          class="brands__logo"
+        /><img
+          src="img/salesforse.png"
+          alt="salesforce-logo"
+          class="brands__logo"
+        />
+        <img src="img/hulu.png" alt="hulu-logo" class="brands__logo" />
+        <img
+          src="img/reddit.png"
+          alt="salesforse-logo"
+          class="brands__logo"
+        /><img
+          src="img/knotel.png"
+          alt="knotel-logo"
+          class="brands__logo"
+        /><img
+          src="img/samsung.png"
+          alt="samsung-logo"
+          class="brands__logo"
+        /><img
+          src="img/amazon.png"
+          alt="amazon-logo"
+          class="brands__logo"
+        /><img
+          src="img/angellist.png"
+          alt="angellist-logo"
+          class="brands__logo"
+        /><img
+          src="img/buzzfeed.png"
+          alt="buzzfeed-logo"
+          class="brands__logo"
+        />
+        <img src="img/apple.png" alt="apple-logo" class="brands__logo" />
+        <img src="img/harry.png" alt="harry-logo" class="brands__logo" />
+        <img src="img/asana.png" alt="asana-logo" class="brands__logo" />
+        <img src="img/jpmorgan.png" alt="jpmorgan-logo" class="brands__logo" />
+        <img
+          src="img/greenpeace.png"
+          alt="greenpeace-logo"
+          class="brands__logo"
+        />
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="carousel" data-flickity>
+        <div class="carousel-cell fill">
+          <img src="img/1-1-1344x700.jpg" alt="slider-1" />
+        </div>
+        <div class="carousel-cell fill">
+          <img src="img/slider-2.png" alt="slider-2" />
+        </div>
+        <div class="carousel-cell fill">
+          <img src="img/3-1-1344x700.jpg" alt="slider-3" />
+        </div>
+      </div>
+    </section>
+
+    <section class="features row">
+      <h2 class="features__heading">
+        Our simple and seamless modular products allow <br />
+        teams to shape and then reshape their work <br />
+        environment with ease.
+      </h2>
+      <p class="features__text">GET IN TOUCH</p>
+      <div class="features__story">
+        <div class="features__card">
+          <img
+            src="img/cost-effective.png"
+            alt="features-img"
+            class="features__card-img"
+          />
+          <div class="features__card-heading">Cost-effective</div>
+          <p class="features__card-text">
+            At a fraction of the cost of traditional construction, our pre-fab
+            solutions create additional space for focused work and collaboration
+            without constant noise, debris and distraction.
+          </p>
+        </div>
+
+        <div class="features__card">
+          <img
+            src="img/time-saving.png"
+            alt="features-img"
+            class="features__card-img"
+          />
+          <h2 class="features__card-heading">Time Saving</h2>
+          <p class="features__card-text">
+            Thoughtful design ensures simple installation in a few hours or
+            less. And, because our products are safety ensured, you'll never
+            have to spend time or money chasing after permits, contractors, and
+            more.
+          </p>
+        </div>
+
+        <div class="features__card">
+          <img
+            src="img/flexible.png"
+            alt="features-img"
+            class="features__card-img"
+          />
+          <h2 class="features__card-heading">Flexible</h2>
+          <p class="features__card-text">
+            Unlike traditional construction, our purpose-built products were
+            designed to adapt with your workspace and can easily be positioned
+            in various places throughout your office, or to an entirely new
+            location.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews row">
+      <div class="reviews__cards">
+        <div class="reviews__card">
+          <div class="reviews__card-stars">
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+          </div>
+          <h2 class="reviews__card-text">
+            “We can now have meetings in peace.”
+          </h2>
+          <img
+            src="img/google-white.png"
+            alt="google-logo"
+            class="reviews__card-logo"
+          />
+        </div>
+        <div class="reviews__card">
+          <div class="reviews__card-stars">
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+          </div>
+          <h2 class="reviews__card-text">
+            “Amazing private space to get work done.”
+          </h2>
+          <img
+            src="img/wayfair-white.png"
+            alt="google-logo"
+            class="reviews__card-logo"
+          />
+        </div>
+
+        <div class="reviews__card">
+          <div class="reviews__card-stars">
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+            <img src="img/star.png" alt="star" class="reviews__card-star" />
+          </div>
+          <h2 class="reviews__card-text">“Our booths are in constant use.”</h2>
+          <img
+            src="img/flexport.png"
+            alt="google-logo"
+            class="reviews__card-logo"
+          />
+        </div>
+        <div class="reviews__card-link-box">
+          <a href="#" class="reviews__readmore-link">READ MORE REVIEWS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promises row">
+      <div class="promises__text-box">
+        <p class="promises__text">
+          We take a human approach to a business-to-business industry, breaking
+          the boundaries between corporate and personal, and rethinking every
+          step of the user experience along the way.
+        </p>
+        <h2 class="promises__heading">We make work, work for you.</h2>
+      </div>
+      <div class="promises__cards">
+        <div class="promises__card">
+          <img
+            src="img/promise-1.jpg"
+            alt="promise image"
+            class="promises__card-img--textsecond"
+          />
+          <div class="promises__card-text-box--textsecond">
+            <h3 class="promises__card-heading">We sell direct.</h3>
+            <p class="promises__card-text">
+              We make extra room in the budget without compromising quality by
+              selling direct. No middle man, and no additional construction
+              required.
+            </p>
+          </div>
+        </div>
+        <div class="promises__card">
+          <div class="promises__card-text-box--textfirst">
+            <h3 class="promises__card-heading">We build with purpose.</h3>
+            <p class="promises__card-text">
+              We’re not just building another room with four walls, we’re
+              building a more productive workspace. We design with you in mind,
+              looking at every detail as an opportunity to enable a better
+              working environment for everyone.
+            </p>
+          </div>
+          <img
+            src="img/promise-2.jpg"
+            alt="promise image"
+            class="promises__card-img--textfirst"
+          />
+        </div>
+        <div class="promises__card">
+          <img
+            src="img/promise-3.jpg"
+            alt="promise image"
+            class="promises__card-img--textsecond"
+          />
+          <div class="promises__card-text-box--textsecond">
+            <h3 class="promises__card-heading">We design sustainably.</h3>
+            <p class="promises__card-text">
+              From design to delivery, we strive to lessen our impact on the
+              environment. Our products are engineered with recycled materials
+              and replace multiple cycles of construction, minimizing noise and
+              our footprint.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="freescroller">
+      <div class="carouselFree" data-flickity="">
+        <div class="carousel-cell"><img src="img/1-1-1344x700.jpg" alt="freescroller-img" class="freescroller__img"></div>
+        <div class="carousel-cell"><img src="img/freescroller-2.jpg" alt="freescroller-img" class="freescroller__img"></div>
+        <div class="carousel-cell"><img src="img/slider-2.png" alt="freescroller-img" class="freescroller__img"></div>
+      </div>
+    </section>
+
+    <section class="trial row">
+      <h2 class="trial__heading">100 day risk-free trial</h2>
+      <div class="trial__cards">
+        <div class="trial__card trial__card--1">
+          <img src="img/freeshiping.png" alt="freeshiping" class="trial__card-img">
+          <h4 class="trial__card-text">FREE SHIPPING</h4>
+        </div>
+        <div class="trial__card trial__card--2">
+          <img src="img/plugplay.png" alt="plug&play" class="trial__card-img--2">
+          <h4 class="trial__card-text">PLUG & PLAY</h4>
+        </div>
+        <div class="trial__card trial__card--3">
+          <img src="img/freereturns.png" alt="freereturns" class="trial__card-img">
+          <h4 class="trial__card-text">FREE RETURNS</h4>
+        </div>
+      </div>
+      <button class="trial__btn">GET A ROOM</button>
+      
+      <a href="#" class="trial__conditions">Terms & Conditions apply</a>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__logo"><img src="img/logo-dark.png" alt="logo-dark" class="footer__logo"></div>
+      
+      <div class="footer__links">
+        <h5 class="footer__links-heading">About</h5>
+        <ul class="footer__links-ul">
+          <li class="footer__link-li"><a href="#" class="footer__link">Compare</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Reviews</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Risk-Free Trial</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Careers</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Press</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Podcast</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Blog</a></li>
+        </ul>
+        <h5 class="footer__links-heading">Showrooms</h5>
+        <ul class="footer__links-ul">
+          <li class="footer__link-li"><a href="#" class="footer__link">New York</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">London</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">San Francisco</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Paris</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Copenhagen</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Zürich</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Los Angeles</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Berlin</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Belgium</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Virtual Demo</a></li>
+          
+        </ul>
+      </div>
+        <div class="footer__links-2">
+        <h5 class="footer__links-heading">Support</h5>
+        <ul class="footer__links-ul">
+        <li class="footer__link-li"><a href="#" class="footer__link">FAQ</a></li>
+        <li class="footer__link-li"><a href="#" class="footer__link">Booth Assembly</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Delivery</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Room Service</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Warranty</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Terms of Use</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Privacy Policy</a></li>
+          <li class="footer__link-li"><a href="#" class="footer__link">Copyright</a></li>
+        </ul>
+        <h5 class="footer__links-heading">Office</h5>
+        <ul class="footer__links-ul">
+          <li class="footer__link-li"><a href="#" class="footer__link">599 Broadway, FL 9 New York, NY 10012</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer__social">
+        <h5 class="footer__social-heading">Follow us</h5>
+        <ul class="footer__social-logos">
+          <li class="footer__social-logo"><a href="#"><img src="img/fb.png" alt="facebook" class="footer__social-logo-img"></a></li>
+          <li class="footer__social-logo"><a href="#"><img src="img/inst.png" alt="instagram" class="footer__social-logo-img"></a></li>
+          <li class="footer__social-logo"><a href="#"><img src="img/linkedijn.png" alt="linkedin" class="footer__social-logo-img"></a></li>
+          <li class="footer__social-logo"><a href="#"><img src="img/pinterest.png" alt="pinterest" class="footer__social-logo-img"></a></li>
+        </ul>
+      </div>
+      <div class="footer__mailing">
+        <h3 class="footer__mailing-heading--sm">Join our mailing list</h3>
+        <h3 class="footer__mailing-heading--md">Be the first to hear everything about ROOM.</h3>
+        <form action="" method="POST" class="footer__mailing-form" id="footer-form">
+          <div class="footer__mailing-country-box">
+          <textarea class="footer__mailing-input--text"></textarea>
+          <div class="footer__mailing-label">
+          <label for="country" class="footer__mailing-label--country">United States</label>
+          <svg
+          class="header__icon"
+          width="14"
+          height="7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity=".9" clip-path="url(#clip0)">
+            <path
+              opacity=".9"
+              d="M.5.5l6.333 5.715M13.5.5L7.167 6.215"
+              stroke="#AAA"
+              stroke-linecap="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <path fill="#fff" d="M0 0h14v7H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+          </div>
+          </div>
+          
+          <input type="checkbox" class="footer__mailing-checkbox" id="commercial" />
+          <label for="commercial" class="footer__mailing-checkbox-label"> &nbsp;Yes. I would like to receive marketing communications from ROOM about product updates and special offers. Please refer to ROOM’s Privacy Policy for more information about how we process your data (including how to unsubscribe). </label>
+          </p>
+        </form>
+        <a href="#" class="footer__mailing-signup">sign up</a>
+      </div>
+    </div>
+    </footer>
+  </body>
 </html>

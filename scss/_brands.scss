@@ -1,0 +1,44 @@
+.brands {
+  margin-top: 24.4rem;
+  text-align: center;
+
+  &__text-box {
+    margin-bottom: 12.5rem;
+  }
+
+  &__heading-3 {
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+  }
+
+  &__heading-4 {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #4a4a4a;
+    padding-top: 0.5rem;
+  }
+
+  &__logos {
+    max-width: 114.4rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    justify-items: center;
+    grid-row-gap: 1rem;
+    margin: auto;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

@@ -1,0 +1,247 @@
+.footer {
+  color: #ffffff;
+  background: #2b2b2b;
+  box-shadow: 0px 40rem 0px #2b2b2b;
+  margin-top: 8rem;
+  padding-top: 10rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding-top: 5rem;
+  }
+
+  &__main {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 2rem;
+    }
+  }
+
+  &__logo {
+    width: 8.7rem;
+    height: 8.7rem;
+  }
+
+  &__link-li {
+    list-style: none;
+    padding-bottom: 4px;
+  }
+
+  &__link-li:last-child {
+    padding-bottom: 4rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding-bottom: 4px;
+    }
+  }
+
+  &__links-ul {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__links-ul:not(:last-child) {
+    padding-right: 7rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding-right: 0;
+    }
+  }
+
+  &__links-ul:last-child {
+    width: 14rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 100%;
+    }
+  }
+
+  &__links-heading,
+  &__social-heading {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+  }
+
+  &__links,
+  &__links-2 {
+    margin-left: 7rem;
+    display: flex;
+    flex-direction: column;
+    max-height: 50rem;
+
+    @media only screen and (max-width: $bp-large) {
+      align-items: center;
+      margin-left: 0;
+      margin-top: 2rem;
+      max-height: none;
+      width: 100%;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5rem;
+    padding-right: 9rem;
+
+    @media only screen and (max-width: $bp-large) {
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+
+    &-logos {
+      display: flex;
+    }
+
+    &-logo {
+      display: inline-block;
+      list-style: none;
+
+      &-img {
+        height: auto;
+      }
+    }
+
+    &-logo:not(:last-child) {
+      margin-right: 1.3rem;
+    }
+  }
+
+  &__mailing {
+    display: flex;
+    flex-direction: column;
+    &-heading {
+      &--sm {
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+      }
+
+      &--md {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        font-weight: 400;
+        margin-top: 1.7rem;
+
+        letter-spacing: 0.5px;
+      }
+    }
+
+    &-form {
+      margin-top: 3rem;
+    }
+
+    &-input--text {
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 3px;
+      width: 100%;
+      height: 5.4rem;
+
+      padding: 0.5rem;
+      color: white;
+      resize: none;
+    }
+
+    &-country-box {
+      margin-bottom: 9.3rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-label {
+      display: flex;
+      align-items: center;
+      margin-top: 1.6rem;
+      justify-content: flex-end;
+    }
+
+    &-label--country {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      margin-right: 0.5rem;
+    }
+
+    &-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+
+      &-label {
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.24rem;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    &-checkbox + label {
+      display: flex;
+      align-items: flex-start;
+      user-select: none;
+    }
+
+    &-checkbox + label::before {
+      content: "";
+      display: inline-block;
+      width: 2.8rem;
+      height: 2.8rem;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+      transition: all 0.3s;
+      margin-right: 2rem;
+    }
+
+    &-checkbox:checked + label::before {
+      border-color: #0b76ef;
+      background-color: #0b76ef;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+
+    &-signup {
+      text-align: right;
+      margin-top: 7rem;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 6rem;
+      letter-spacing: 0.23rem;
+      text-transform: uppercase;
+      color: white;
+      margin-left: auto;
+      text-decoration: none;
+    }
+  }
+}
