@@ -20,7 +20,10 @@
   &__story {
     margin-top: 7.1rem;
     display: flex;
-    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-wrap: wrap;
+    }
   }
 
   &__card {
