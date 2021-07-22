@@ -29,6 +29,10 @@
   &__link-li {
     list-style: none;
     padding-bottom: 4px;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1rem;
+    }
   }
 
   &__link-li:last-child {
@@ -49,6 +53,7 @@
       align-items: center;
       width: 100%;
       padding-bottom: 2rem;
+      flex-wrap: wrap;
     }
   }
 

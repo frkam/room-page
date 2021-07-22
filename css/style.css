@@ -12,6 +12,9 @@ html {
   @media only screen and (max-width: 76.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 21.4em) {
+    html {
+      font-size: 38.5%; } }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -59,6 +62,9 @@ body {
     @media only screen and (max-width: 31.25em) {
       .brands__logos {
         grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (max-width: 21.4em) {
+      .brands__logos {
+        grid-template-columns: repeat(1, 1fr); } }
 
 .features {
   margin-top: 10.3rem; }
@@ -124,6 +130,9 @@ body {
   .footer__link-li {
     list-style: none;
     padding-bottom: 4px; }
+    @media only screen and (max-width: 31.25em) {
+      .footer__link-li {
+        padding: 0 1rem; } }
   .footer__link-li:last-child {
     padding-bottom: 4rem; }
     @media only screen and (max-width: 51.25em) {
@@ -138,7 +147,8 @@ body {
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        padding-bottom: 2rem; } }
+        padding-bottom: 2rem;
+        flex-wrap: wrap; } }
   .footer__links-ul:not(:last-child) {
     padding-right: 7rem; }
     @media only screen and (max-width: 51.25em) {
@@ -306,13 +316,29 @@ body {
     @media only screen and (max-width: 31.25em) {
       .navigation__logo {
         margin: 0 auto; } }
+    @media only screen and (max-width: 31.25em) {
+      .navigation__logo-R {
+        width: 75%;
+        height: 75%; } }
     .navigation__logo-O--right-top {
       margin-left: auto; }
+      @media only screen and (max-width: 31.25em) {
+        .navigation__logo-O--right-top {
+          width: 75%;
+          height: 75%; } }
     .navigation__logo-O--left-bottom {
       margin-top: auto; }
+      @media only screen and (max-width: 31.25em) {
+        .navigation__logo-O--left-bottom {
+          width: 75%;
+          height: 75%; } }
     .navigation__logo-M {
       margin-left: auto;
       margin-top: auto; }
+      @media only screen and (max-width: 31.25em) {
+        .navigation__logo-M {
+          width: 75%;
+          height: 75%; } }
   .navigation__link-box {
     display: flex;
     justify-content: center;
