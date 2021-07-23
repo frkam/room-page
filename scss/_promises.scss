@@ -31,12 +31,18 @@
 
     @media only screen and (max-width: $bp-small) {
       padding-top: 2rem;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
   &__card-heading,
   &__card-text {
     font-weight: 400;
+
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+    }
   }
 
   &__card-img--textsecond,
@@ -47,6 +53,10 @@
       width: 50%;
       height: 50%;
       object-fit: cover;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 2rem;
     }
   }
 
@@ -75,8 +85,17 @@
     padding-right: 20rem;
 
     @media only screen and (max-width: $bp-large) {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 5rem;
+      padding-right: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      order: -1;
     }
   }
 
@@ -85,8 +104,13 @@
     padding-left: 19rem;
 
     @media only screen and (max-width: $bp-large) {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 10rem;
+      padding-right: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
   }
 
